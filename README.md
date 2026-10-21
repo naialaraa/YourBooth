@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✦ YourBooth
+# YourBooth
 
 **Tiny memories, forever yours.**
 
@@ -12,7 +12,7 @@ portfolio piece and deployable to GitHub Pages in one step.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Four booths**, each with its own vibe:
   - **Original** — classic photostrip, then a full decorate stage: frame, doodle, text & stickers
@@ -28,51 +28,15 @@ portfolio piece and deployable to GitHub Pages in one step.
 - **Delightful details** — star cursor, floating sparkles, loading screen, smooth Framer Motion transitions
 - **100% static** — works offline once loaded, perfect for GitHub Pages
 
-## 🛠 Tech Stack
+## Tech Stack
 
 React · Vite · TailwindCSS · Framer Motion · HTML5 Canvas · MediaDevices `getUserMedia`
-
-## 🚀 Getting Started
-
-```bash
-# 1. install dependencies
-npm install
-
-# 2. run the dev server
-npm run dev
-# open the printed localhost URL and allow camera access
-
-# 3. build for production
-npm run build
-
-# 4. preview the production build locally
-npm run preview
-```
 
 > **Camera note:** browsers only allow the camera over `https://` or `localhost`.
 > `npm run dev` and GitHub Pages both satisfy this. Opening the built `index.html`
 > from `file://` will not.
 
-## 🌐 Deploy to GitHub Pages
-
-Because `vite.config.js` uses `base: './'` (relative asset paths) and the app uses
-state-based view switching (no router), it works under any repo subpath with **no
-extra config**.
-
-**Option A — GitHub Actions (recommended).** This repo includes
-`.github/workflows/deploy.yml`. Push to `main`, then in your repo go to
-**Settings → Pages → Build and deployment → Source: GitHub Actions**. Done — every
-push builds and publishes automatically.
-
-**Option B — `gh-pages` branch.** A script is already wired up:
-
-```bash
-npm run deploy   # builds and pushes dist/ to the gh-pages branch
-```
-
-Then set **Settings → Pages → Source: Deploy from a branch → `gh-pages` / root**.
-
-## 🎨 Customizing
+## Customizing
 
 | Want to change… | Edit |
 | --- | --- |
@@ -83,7 +47,7 @@ Then set **Settings → Pages → Source: Deploy from a branch → `gh-pages` / 
 | Booth preview thumbnails | regenerate with `python3 scripts/gen_assets.py` or drop your own into `public/assets/previews/` |
 | Fish / sticker artwork | see the READMEs in `src/assets/fish/` and `src/assets/stickers/` |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
@@ -107,7 +71,7 @@ src/
 └── App.jsx            # loading → home → booth view state machine
 ```
 
-## 🔒 Privacy
+## Privacy
 
 Every photo is captured, composited, and downloaded locally in your browser.
 Nothing is uploaded anywhere. There is no server.
